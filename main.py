@@ -10,11 +10,12 @@ Python 3.13, standard library only, no network.
 import os
 from pathlib import Path
 
-LINE = (
-    "Twelve yoghurts, one cucumber, zero eye contact. "
-    "Please place your shame in the bagging area \u2014 "
-    "I've already told the other tills."
+BASKET_SCAN = "Twelve yoghurts, one cucumber, zero eye contact"
+VERDICT = (
+    "please place your shame in the bagging area \u2014 "
+    "I've already told the other tills, and they're judging you too"
 )
+LINE = f"{BASKET_SCAN}: {VERDICT}."
 
 MAX_CHARS = 200
 
